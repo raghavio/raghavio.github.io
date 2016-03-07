@@ -1,0 +1,44 @@
+header {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+header .content {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+header .content img {
+    border: 2px solid;
+}
+.img-src {
+    position: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.icons i {
+    color: white;
+    font-size: 30px;
+    padding: 0 15px 0 15px;
+}
+.icons i:hover {
+    color: black;
+}
+.location-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom:100px;
+    color: white;
+}
+#about {
+    height: 100%;
+    background-color: white;
+}
