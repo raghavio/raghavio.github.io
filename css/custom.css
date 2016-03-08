@@ -54,3 +54,8 @@ section .title {
 .skills-content {
     text-align: left;
 }
+
+footer {
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
