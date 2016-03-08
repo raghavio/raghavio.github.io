@@ -1,0 +1,12 @@
+{
+    "Database": {
+        "SQL": {"progress": 60, "active": true},
+        "PostgreSQL": {"progress": 30, "active": true},
+        "MySQL": {"progress": 30}
+    },
+    "Programming Languages": {
+        "Python": {"progress": 50, "active": true},
+        "Java": {"progress": 60, "active": true},
+        "Prolog": {"progress": 20}
+    }
+}

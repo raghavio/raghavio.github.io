@@ -13,7 +13,7 @@ header .content img {
     border: 2px solid;
 }
 .img-src {
-    position: fixed;
+    position: absolute;
     background-position: center;
     -webkit-background-size: cover;
     top: 0;
@@ -28,7 +28,7 @@ header .content img {
     padding: 0 15px 0 15px;
 }
 .icons i:hover {
-    color: black;
+    color: orange;
 }
 .location-label {
     position: absolute;
@@ -38,7 +38,19 @@ header .content img {
     bottom:100px;
     color: white;
 }
-#about {
-    height: 100%;
+section .title {
+    margin: 0;
+    padding: 70px 0 70px 0;
+    text-align: center;
     background-color: white;
+}
+#about {
+    text-align: center;
+}
+.skills {
+    color: white;
+    background: url(../images/code-blur.jpg) no-repeat center center scroll;
+}
+.skills-content {
+    text-align: left;
 }
