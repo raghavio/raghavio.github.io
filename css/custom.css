@@ -43,7 +43,7 @@ header .content img {
 }
 section .title {
     margin: 0;
-    padding: 70px 0 70px 0;
+    padding: 40px 0 60px 0;
     text-align: center;
     background-color: white;
 }
@@ -52,7 +52,7 @@ section .title {
 }
 #skills .content {
     color: white;
-    background: url(../images/code-blur.jpg) no-repeat center center scroll;
+    background: url(../images/code-blur.jpg) no-repeat center center fixed;
 }
 .progress {
     max-width: 400px;
