@@ -12,7 +12,7 @@ header .content {
 header .content img {
     border: 2px solid;
 }
-.img-src {
+.header-img {
     position: absolute;
     background-position: center;
     -webkit-background-size: cover;
@@ -21,6 +21,9 @@ header .content img {
     left: 0;
     right: 0;
     z-index: -1;
+}
+.non-blur-img {
+    opacity: 0;
 }
 .icons i {
     color: white;
@@ -90,11 +93,23 @@ footer {
     color: #eee;
 }
 @media (max-width: 992px) {
+    .img-clear {
+        background: url(../images/background-sm.jpg) no-repeat center center fixed;
+    }
+    .non-blur-img {
+        background: url(../images/background-blur-sm.jpg) no-repeat center center fixed;;
+    }
     .project-item-image {
         border-bottom: 1px solid #eee;
     }
 }
 @media (min-width: 992px) {
+    .img-clear {
+        background: url(../images/background.jpg) no-repeat center center fixed;
+    }
+    .non-blur-img {
+        background: url(../images/background-blur.jpg) no-repeat center center fixed;
+    }
     .project-item {
         border: 2px solid #eee;
     }
