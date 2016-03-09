@@ -14,8 +14,8 @@ header .content img {
 }
 .header-img {
     position: absolute;
-    background-position: center;
     -webkit-background-size: cover;
+    background-size: cover; 
     top: 0;
     bottom: 0;
     left: 0;
@@ -53,6 +53,8 @@ section .title {
 #skills .content {
     color: white;
     background: url(../images/code-blur.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .progress {
     max-width: 400px;
