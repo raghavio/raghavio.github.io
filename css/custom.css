@@ -65,7 +65,9 @@ section .title {
 }
 footer {
     text-align: center;
-    margin: 40px 0 30px 0;
+    padding: 60px 0 40px 0;
+    background: #2a2730;
+    color: #99979c;
 }
 .project-item {
     display: block;
