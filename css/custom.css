@@ -14,8 +14,6 @@ header .content img {
 }
 .header-img {
     position: absolute;
-    -webkit-background-size: cover;
-    background-size: cover;
     top: 0;
     bottom: 0;
     left: 0;
@@ -99,9 +97,13 @@ footer {
 @media (max-width: 992px) {
     .img-clear {
         background: url(../images/background-sm.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
     .non-blur-img {
-        background: url(../images/background-blur-sm.jpg) no-repeat center center fixed;;
+        background: url(../images/background-blur-sm.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
     .project-item-image {
         border-bottom: 1px solid #eee;
@@ -110,9 +112,13 @@ footer {
 @media (min-width: 992px) {
     .img-clear {
         background: url(../images/background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
     .non-blur-img {
         background: url(../images/background-blur.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
     .project-item {
         border: 2px solid #eee;
