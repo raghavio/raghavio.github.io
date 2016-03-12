@@ -1,19 +1,24 @@
-$(window).scroll(function() {
-    //Got this from here http://codepen.io/sotayamashita/pen/pqLcv
-    // Get scroll position
-    var s = $(window).scrollTop(),
-    // scroll value and opacity
-    opacityVal = (s / 150);
-    // opacity value 0% to 100%
-    $('.non-blur-img').css('opacity', opacityVal);
-});
+(function() {
+    $(window).scroll(function() {
+        //Got this from here http://codepen.io/sotayamashita/pen/pqLcv
+        // Get scroll position
+        var s = $(window).scrollTop(),
+        // scroll value and opacity
+        opacityVal = (s / 150);
+        // opacity value 0% to 100%
+        $('.non-blur-img').css('opacity', opacityVal);
+    });
 
-$.getJSON('skills.json', function(data) {
-    console.log("hell");
-    loadProgress(data);
-});
+    $.getJSON('skills.json', function(data) {
+        loadProgress(data);
+    });
 
-setAge();
+    $.getJSON('projects.json', function(data) {
+        loadProjects(data);
+    });
+
+    setAge();
+})();
 
 /**
 * Gets difference between my date of bith and current date.
@@ -22,6 +27,24 @@ function setAge() {
     var dateOfBith = new Date('1994/09/12 00:13:06');
     var diff = Math.abs(new Date() - dateOfBith);
     $("#age").html(Math.floor(diff/1000/60/60/24/365));
+}
+
+function loadProjects(projects) {
+    for (var project in projects) {
+        var sub_heading = projects[project]['sub-heading'];
+        var summary = projects[project]['summary'];
+        var source_link = projects[project]['source'];
+        var live_link = projects[project]['live'];
+        var image_name = projects[project]['image-name'];
+
+        var htmlOutput = '<div class="col-xs-12 col-md-6" style="margin-bottom:30px;"> <div class="project-item"> <div class="hidden-xs hidden-sm"> <div class="project-caption"> <h3 class="text-center">' + project + '<br> <small>' + sub_heading + '</small> </h3>';
+        var paragraphs = '';
+        for (var i=0; i < summary.length; i++) {
+            paragraphs += '<p>' + summary[i] + '</p>'
+        }
+        htmlOutput += paragraphs + '<a href="' + source_link + '" target="_blank" class="btn btn-small btn-default"><i class="fa fa-github"></i> Github</a> <a href="' + live_link + '" target="_blank" class="pull-right btn btn-small btn-default"><i class="fa fa-internet-explorer"></i> Live demo</a> </div> <img class="project-item-image center-block img-responsive" src="images/' + image_name +'" alt="Aam Adami Party"> </div> <div class="visible-xs visible-sm"> <div class="thumbnail"> <img class="project-item-image center-block img-responsive" src="images/' + image_name + '" alt="Aam Adami Party"> <div class="caption"> <h3 class="text-center"> ' + project + '<br> <small>' + sub_heading + '</small> </h3> ' + paragraphs + ' <a href="' + source_link + '" target="_blank" class="btn btn-small btn-default"><i class="fa fa-github"></i> Github</a> <a href="' + live_link + '" target="_blank" class="pull-right btn btn-small btn-default"><i class="fa fa-internet-explorer"></i> Live demo</a> </div> </div> </div> </div> </div>';
+        $('#projects-content').append(htmlOutput);
+    }
 }
 
 function loadProgress(skills) {
