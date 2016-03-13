@@ -125,7 +125,7 @@ footer {
         border: 2px solid #eee;
     }
     .project-caption:hover {
-        background-color: black;
-        opacity: 0.80;
+        background-color: #2a2730;
+        opacity: 0.90;
     }
 }

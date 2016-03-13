@@ -23,7 +23,9 @@
     "Relation Finder": {
         "sub-heading": "Find your relation with your relatives.",
         "summary": [
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Has it ever happened when some random aunty comes to you in a wedding and asks <em>Beta, do you remember me?</em> You know her but don't know how she's related.",
+            "Indian relationships are complicated. This is my attempt to save you from embarrassment.",
+            "Capable of processing tricky queries, thanks to <a href='https://en.wikipedia.org/wiki/Prolog' target='_blank'>Prolog</a>, this is something I'm really proud of."
         ],
         "source": "https://github.com/RaghavPro/RelationFinder",
         "live": "https://relationfinder.herokuapp.com",
