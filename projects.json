@@ -32,18 +32,23 @@
         "image-name": "relationfinder.jpg"
     },
     "Book Store": {
-        "sub-heading": "Lorem ipsum",
+        "sub-heading": "E-commerce book store application",
         "summary": [
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "A simple e-commerce website written purely in Java Servlets/JSP.",
+            "Features more than 1,000 books along with their user reviews in 100+ cateogries, scraped from <a href='https://amazon.in' target='_blank'>Amazon</a><sup>*</sup>.",
+            "This was made for my final year project.",
+            "* The data was scarped just for learning purpose and to make it look interesting. It's not open sourced."
         ],
         "source": "https://github.com/raghavpro/bookstore",
         "live": "https://bookhive.herokuapp.com",
         "image-name": "bookstore.png"
     },
     "Runescape Hiscores": {
-        "sub-heading": "Lorem ipsum",
+        "sub-heading": "A hiscores app for <a href='https://runescape.com' target='_blank'>Runescape</a> Private Servers.",
         "summary": [
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "RuneScape is a <a href='https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game' target='_blank'>fantasy massively multiplayer online role-playing game</a> (MMORPG) developed and published by Jagex, released originally in January 2001.",
+            "This is a hiscores (player scoreboard) application written using <a href='https://www.djangoproject.com' target='_blank'>Django</a> for Runescape Private Servers (<a href='http://rsps.wikia.com/wiki/Runescape_Private_Server' target='_blank'>RSPS</a>).",
+            "Being a part of both Runescape and RSPS communities I've made and been with several Runescape private servers."
         ],
         "source": "https://github.com/RaghavPro/Runescape-Hiscores",
         "live": "http://hiscores.herokuapp.com/hiscores/overall/",
