@@ -41,7 +41,7 @@
         ],
         "source": "https://github.com/raghavpro/bookstore",
         "live": "https://bookhive.herokuapp.com",
-        "image-name": "bookstore.png"
+        "image-name": "bookstore.jpg"
     },
     "Runescape Hiscores": {
         "sub-heading": "A hiscores app for <a href='https://runescape.com' target='_blank'>Runescape</a> Private Servers.",
