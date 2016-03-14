@@ -1,12 +1,29 @@
 {
+    "Languages": {
+        "Python": {"progress": 50},
+        "Java": {"progress": 60},
+        "Prolog": {"progress": 20},
+        "HTML/CSS": {"progress": 80},
+        "Javascript": {"progress": 50}
+    },
     "Database": {
-        "SQL": {"progress": 60, "active": true},
-        "PostgreSQL": {"progress": 30, "active": true},
+        "SQL": {"progress": 60},
+        "PostgreSQL": {"progress": 30},
         "MySQL": {"progress": 30}
     },
-    "Programming Languages": {
-        "Python": {"progress": 50, "active": true},
-        "Java": {"progress": 60, "active": true},
-        "Prolog": {"progress": 20}
+    "Frameworks": {
+        "Flask (Python)": {"progress": 65},
+        "Django (Python)": {"progress": 35},
+        "JavaEE": {"progress": 40},
+        "Bootstrap (HTML)": {"progress": 90},
+        "jQuery": {"progress": 60},
+        "AngularJS": {"progress": 15}
+    },
+    "Tools": {
+        "Git": {"progress": 50},
+        "Heroku": {"progress": 60}
+    },
+    "Operating System": {
+        "Mac OSX (Unix)": {"progress": 55}
     }
 }
