@@ -59,7 +59,7 @@ function loadProgress(skills) {
         htmlOutput += '<div class="col-xs-12 col-md-6"><h3>' + skill + '</h3><dl class="dl-horizontal">'
         for (var tool in skills[skill]) {
             var toolInfo = skills[skill][tool];
-            htmlOutput += '<dt class="pull-left" style="margin: 0;">' + tool + ': </dt><dd><div class="progress"><div class="progress-bar ' + getClassByProgress(toolInfo['progress']) + ' progress-bar-striped ' + (toolInfo['active'] ? "active" : "") + '" role="progressbar" aria-valuenow="'+ toolInfo['progress'] +'" aria-valuemin="0" aria-valuemax="100" style="width: '+ toolInfo['progress'] +'%"><span class="sr-only">' + toolInfo['progress'] + '% Complete (success)</span>' + toolInfo['progress'] + '%</div></div></dd>'
+            htmlOutput += '<dt style="margin: 0;">' + tool + ': </dt><dd><div class="progress"><div class="progress-bar ' + getClassByProgress(toolInfo['progress']) + ' progress-bar-striped ' + (toolInfo['active'] ? "active" : "") + '" role="progressbar" aria-valuenow="'+ toolInfo['progress'] +'" aria-valuemin="0" aria-valuemax="100" style="width: '+ toolInfo['progress'] +'%"><span class="sr-only">' + toolInfo['progress'] + '% Complete (success)</span>' + toolInfo['progress'] + '%</div></div></dd>'
         }
         htmlOutput += "</dl></div>";
         if (count % 2 == 0 || count == skills_length && count % 2 != 0) {
