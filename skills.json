@@ -1,29 +1,29 @@
 {
     "Languages": {
-        "Python": {"progress": 50},
-        "Java": {"progress": 60},
+        "Python": {"progress": 50, "active": true},
+        "Java": {"progress": 60, "active": true},
         "Prolog": {"progress": 20},
-        "HTML/CSS": {"progress": 80},
-        "Javascript": {"progress": 50}
+        "HTML/CSS": {"progress": 80, "active": true},
+        "Javascript": {"progress": 50, "active": true}
     },
     "Database": {
-        "SQL": {"progress": 60},
-        "PostgreSQL": {"progress": 30},
+        "SQL": {"progress": 60, "active": true},
+        "PostgreSQL": {"progress": 30, "active": true},
         "MySQL": {"progress": 30}
     },
     "Frameworks": {
-        "Flask (Python)": {"progress": 65},
-        "Django (Python)": {"progress": 35},
+        "Flask (Python)": {"progress": 65, "active": true},
+        "Django (Python)": {"progress": 35, "active": true},
         "JavaEE": {"progress": 40},
-        "Bootstrap (HTML)": {"progress": 90},
-        "jQuery": {"progress": 60},
+        "Bootstrap (HTML)": {"progress": 90, "active": true},
+        "jQuery": {"progress": 60, "active": true},
         "AngularJS": {"progress": 15}
     },
     "Tools": {
-        "Git": {"progress": 50},
-        "Heroku": {"progress": 60}
+        "Git": {"progress": 50, "active": true},
+        "Heroku": {"progress": 60, "active": true}
     },
     "Operating System": {
-        "Mac OSX (Unix)": {"progress": 55}
+        "Mac OSX (Unix)": {"progress": 55, "active": true}
     }
 }
