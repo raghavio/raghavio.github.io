@@ -29,6 +29,9 @@ function setAge() {
     $("#age").html(Math.floor(diff/1000/60/60/24/365));
 }
 
+/**
+* Generates project section html from JSON file.
+*/
 function loadProjects(projects) {
     for (var project in projects) {
         var sub_heading = projects[project]['sub-heading'];
@@ -42,11 +45,14 @@ function loadProjects(projects) {
         for (var i=0; i < summary.length; i++) {
             paragraphs += '<p>' + summary[i] + '</p>'
         }
-        htmlOutput += paragraphs + '<a href="' + source_link + '" target="_blank" class="btn btn-small btn-default"><i class="fa fa-github"></i> Github</a> <a href="' + live_link + '" target="_blank" class="pull-right btn btn-small btn-default"><i class="fa fa-internet-explorer"></i> Live demo</a> </div> <img class="project-item-image center-block img-responsive" src="images/' + image_name +'" alt="Aam Adami Party"> </div> <div class="visible-xs visible-sm"> <div class="thumbnail"> <img class="project-item-image center-block img-responsive" src="images/' + image_name + '" alt="Aam Adami Party"> <div class="caption"> <h3 class="text-center"> ' + project + '<br> <small>' + sub_heading + '</small> </h3> ' + paragraphs + ' <a href="' + source_link + '" target="_blank" class="btn btn-small btn-default"><i class="fa fa-github"></i> Github</a> <a href="' + live_link + '" target="_blank" class="pull-right btn btn-small btn-default"><i class="fa fa-internet-explorer"></i> Live demo</a> </div> </div> </div> </div> </div>';
+        htmlOutput += paragraphs + '<a href="' + source_link + '" target="_blank" class="btn btn-small btn-default"><i class="fa fa-github"></i> Github</a> <a href="' + live_link + '" target="_blank" class="pull-right btn btn-small btn-default"><i class="fa fa-internet-explorer"></i> Live demo</a> </div> <img class="project-item-image center-block img-responsive" src="images/' + image_name +'" alt="' + project + '"> </div> <div class="visible-xs visible-sm"> <div class="thumbnail"> <img class="project-item-image center-block img-responsive" src="images/' + image_name + '" alt="' + project + '"> <div class="caption"> <h3 class="text-center"> ' + project + '<br> <small>' + sub_heading + '</small> </h3> ' + paragraphs + ' <a href="' + source_link + '" target="_blank" class="btn btn-small btn-default"><i class="fa fa-github"></i> Github</a> <a href="' + live_link + '" target="_blank" class="pull-right btn btn-small btn-default"><i class="fa fa-internet-explorer"></i> Live demo</a> </div> </div> </div> </div> </div>';
         $('#projects-content').append(htmlOutput);
     }
 }
 
+/**
+* Generates progress bars html from JSON file for skills section.
+*/
 function loadProgress(skills) {
     var count = 0;
     var skills_length = Object.keys(skills).length;
