@@ -2,7 +2,7 @@
     "Redcarpetup": {
         "sub-heading": "A YCombinator '15 and <a href='https://developers.google.com/startups/accelerator/region-india' target='_blank'>Google launchpad startup</a>. Provides instant credit to students by creating a credit score for them.",
         "summary": [
-            "Worked on spreadsheet based order management system built with React on Node using Redux and Handsontable. Being in charge of OMS, I was responsible to coordinate with operations and marketing dept. and resolve their daily issues."
+            "Worked on spreadsheet based order management system built with React on Node using Redux and Handsontable. Being in charge of OMS, I was responsible to coordinate with operations and marketing dept. and resolve their daily issues.",
             "Also created RESTful APIs for OMS and mobile app. Refactored and fixed multitude of bugs in both OMS and API server."
         ],
         "source": "https://github.com/redcarpetup",
